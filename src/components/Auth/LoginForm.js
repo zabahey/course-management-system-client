@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Col, Form, Row, Button, Alert } from 'react-bootstrap';
 import { login } from '../../store/authAction';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default function LoginForm() {
   const { isAuthenticated } = useSelector((state) => state.auth);
@@ -66,6 +66,9 @@ export default function LoginForm() {
             </Button>
           </div>
         </Form>
+        <div className="text-center mt-3">
+          <Link to="/signup">Register a new user</Link>
+        </div>
       </Col>
     </Row>
   );

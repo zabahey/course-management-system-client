@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Col, Form, Row, Button, Alert } from 'react-bootstrap';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { signup } from '../../api/user';
 
 export default function Signupform() {
@@ -119,6 +119,9 @@ export default function Signupform() {
             </Button>
           </div>
         </Form>
+        <div className="text-center mt-3">
+          <Link to="/login">Already has an account? go to login</Link>
+        </div>
       </Col>
     </Row>
   );
