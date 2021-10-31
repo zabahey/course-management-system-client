@@ -25,8 +25,6 @@ function App() {
 
   return (
     <Layout>
-      {isInitial ? 'true' : 'false'}
-      {isAuthenticated ? 'true' : 'false'}
       <Switch>
         {!isAuthenticated && (
           <Route path="/login" exact>
