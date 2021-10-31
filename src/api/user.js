@@ -12,6 +12,5 @@ export async function login(username, password) {
     },
   });
 
-  const data = await response.json();
-  console.log(data);
+  return await response.json();
 }
