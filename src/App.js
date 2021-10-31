@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import UserProfile from './pages/UserProfile';
+import Signupform from './components/Auth/Signupform';
 
 import { setAuthenticate } from './store/authAction';
 
@@ -29,6 +30,11 @@ function App() {
         {!isAuthenticated && (
           <Route path="/login" exact>
             <Login />
+          </Route>
+        )}
+        {!isAuthenticated && (
+          <Route path="/signup" exact>
+            <Signupform />
           </Route>
         )}
         {isInitial && isAuthenticated && (
