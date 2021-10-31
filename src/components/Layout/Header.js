@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -33,10 +34,14 @@ export default function Header() {
             {isAuthenticated && (
               <Fragment>
                 <NavItem>
-                  <NavLink>Courses</NavLink>
+                  <NavLink to="/courses" as={Link}>
+                    Courses
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink>Profile</NavLink>
+                  <NavLink to="/profile" as={Link}>
+                    Profile
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <Button
