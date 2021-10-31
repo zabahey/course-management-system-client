@@ -19,16 +19,20 @@ export default function CourseList({ courses }) {
             >
               <Card.Img variant="top" src={course.image} />
               <Card.Body>
-                <Card.Title style={{ minHeight: '40px' }}>
-                  {course.name}
-                </Card.Title>
-                <Card.Text>
+                <Card.Title>
+                  <div className="mb-3" style={{ minHeight: '40px' }}>
+                    {course.name}
+                  </div>
                   {course.instructor ? (
-                    <span className="instructor small">
+                    <div
+                      className="instructor small"
+                      style={{ fontWeight: '300' }}
+                    >
                       {course.instructor.firstName} {course.instructor.lastName}
-                    </span>
+                    </div>
                   ) : null}
-                </Card.Text>
+                </Card.Title>
+                <Card.Text></Card.Text>
               </Card.Body>
             </Card>
           </Col>
