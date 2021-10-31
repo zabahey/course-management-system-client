@@ -1,16 +1,16 @@
 @media only screen and (max-width: 991px) {
-  .card {
+  .card.course {
     flex-direction: row;
   }
 
-  .card img {
+  .card.course img {
     width: 180px;
     height: auto;
     object-fit: scale-down;
   }
 }
 
-.card:hover {
+.card.course:hover {
   cursor: pointer;
   background-color: #f8f8f8;
 }

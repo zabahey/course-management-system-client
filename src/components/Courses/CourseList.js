@@ -14,7 +14,7 @@ export default function CourseList({ courses }) {
         return (
           <Col key={course._id} lg={4} sm={12}>
             <Card
-              className="mb-lg-4 mb-sm-0"
+              className="course mb-lg-4 mb-sm-0"
               onClick={selectSource.bind(null, course._id)}
             >
               <Card.Img variant="top" src={course.image} />
