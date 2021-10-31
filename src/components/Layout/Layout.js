@@ -8,7 +8,7 @@ export default function Layout(props) {
     <Fragment>
       <Header />
       <main>
-        <Container>Main Content</Container>
+        <Container>{props.children}</Container>
       </main>
       <Footer />
     </Fragment>
